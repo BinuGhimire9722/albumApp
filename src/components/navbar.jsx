@@ -13,9 +13,15 @@ function CustomNavbar(props){
             <Nav className="me-auto">
                 
             {routes.map((item) => {
-                return <Nav.Link><Link to={item.path}>{item.name}</Link></Nav.Link>
-
-            })}
+                return <div>
+                { item.show == true ?
+                <Nav.Link><Link to={item.path}>{item.name}</Link></Nav.Link>
+                :
+                <></>
+                }
+                </div>
+            }
+            )}
                               
             </Nav>
             </Navbar.Collapse>

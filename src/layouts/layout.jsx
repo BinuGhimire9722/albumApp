@@ -1,5 +1,5 @@
 import routes from "../routes/route";
-import {Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CustomNavbar  from "../components/navbar.jsx";
 import history from "../history/history.js";
 function Layout(props){

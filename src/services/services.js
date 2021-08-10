@@ -9,7 +9,7 @@ const AlbumService = {
 
     getAlbumById : async (id) =>{
         try{
-            let result = await axios.get(url+"photos?albumsId="+id);
+            let result = await axios.get(url+"photos?albumId="+id);
             console.log(result);
             return result;
         }catch(err){

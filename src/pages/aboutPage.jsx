@@ -1,7 +1,9 @@
+import {Text,TextBlock} from "../styled/text.style";
+
 function AboutPage (props){
-    return <div>
-        this is about page....
-    </div>
+    return <TextBlock>
+        <Text success>this is about page...</Text>
+    </TextBlock>
 }
 
 export default AboutPage;
